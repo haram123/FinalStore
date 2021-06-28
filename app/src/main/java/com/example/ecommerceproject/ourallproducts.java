@@ -2,6 +2,7 @@ package com.example.ecommerceproject;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -27,6 +28,10 @@ public class ourallproducts extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ourallproducts);
+        Toolbar toolbar = (Toolbar) this.findViewById(R.id.show_all_toolbar);
+        this.setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         recyclerView=findViewById(R.id.allrecycler);
 
         recyclerView.setLayoutManager(new GridLayoutManager(this,3));

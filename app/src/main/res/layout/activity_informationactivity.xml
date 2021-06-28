@@ -8,11 +8,22 @@
     tools:context=".informationactivity">
 
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detailed_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Products Detailed"/>
+
     <ImageView
         android:id="@+id/iminfo"
         android:layout_width="wrap_content"
         android:layout_height="150dp"
         app:srcCompat="@drawable/fs3" />
+
+
     <TextView
         android:id="@+id/tvnameinfo"
         android:layout_width="match_parent"

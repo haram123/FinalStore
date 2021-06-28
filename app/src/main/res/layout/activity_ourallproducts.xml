@@ -7,7 +7,14 @@
     android:orientation="vertical"
     tools:context=".ourallproducts">
 
-
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/show_all_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightpink"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Cart"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/allrecycler"
         android:layout_width="match_parent"
